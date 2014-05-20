@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{= message }}</title>
+    <title>{{= title }}</title>
     <link rel="stylesheet" href="/css/reset.css"/>
     <link rel="stylesheet" href="/css/global.css"/>
 </head>
 <body>
 <div id="main">
-    <h1>{{= message }}</h1>
-
-    <h2>{{= error.status }}</h2>
-    <hr/>
-    <pre>{{= error.stack }}</pre>
+{{- body -}}
 </div>
 </body>
 </html>
-
