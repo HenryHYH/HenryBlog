@@ -2,7 +2,6 @@ body {
     font-family: Arial;
 }
 
-#main {
-    margin: 0px auto;
-    width: 960px;
+#logo {
+    margin: 23px;
 }
