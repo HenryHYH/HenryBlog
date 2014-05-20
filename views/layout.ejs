@@ -9,6 +9,20 @@
 
 <div id="header">
     <h1 id="logo">Henry</h1>
+
+    <ul class="menu">
+        <li><a href="#">日志</a></li>
+        <li><a href="#">相册</a></li>
+        <li><a href="#">吐槽</a></li>
+        <li><a href="#">微博</a></li>
+        <li><a href="#">源代码</a></li>
+        <li><a href="#">关于</a></li>
+    </ul>
+
+    <div id="auth">
+        <a id="login" href="#">登录</a>
+        <a id="register" href="#">注册</a>
+    </div>
 </div>
 <div id="sidebar">
     <div class="side-block">Block</div>
@@ -21,7 +35,10 @@
         {{- body -}}
     </div>
 </div>
-<div id="footer"></div>
+<div class="clear"></div>
+<div id="footer">
+    Copyright &copy; - <strong>Henry</strong> - {{= new Date().getFullYear() }}
+</div>
 
 </body>
 </html>

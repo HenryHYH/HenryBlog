@@ -1,16 +1,59 @@
+/* 公共 */
+
 body {
     font-family: Arial;
+    background-color: #fff;
+    color: #555;
 }
+
+a:link, a:visited {
+    color: #09c;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #366;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+/* end 公共 */
 
 /* 头部 */
 
 #header {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #09c;
+    height: 56px;
 }
 
 #logo {
     margin: 23px;
-    color: #333;
+}
+
+#header .menu {
+    float: left;
+    margin-top: -33px;
+    margin-left: 260px;
+    font-weight: bold;
+}
+
+#header .menu li {
+    float: left;
+    padding: 8px;
+    margin: 0px 20px;
+}
+
+#auth {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+#auth a {
+    padding: 5px;
 }
 
 /* end 头部 */
@@ -26,6 +69,8 @@ body {
 #content {
     margin-left: 250px;
     padding: 10px;
+    border-left: solid 1px #09c;
+    min-height: 600px;
 }
 
 /* side */
@@ -33,16 +78,11 @@ body {
 #sidebar {
     float: left;
     width: 233px;
-    border: solid 1px #999;
-    border-left: none;
-    border-top: none;
     padding: 12px 8px;
 }
 
 .side-block {
-    border: solid 1px #999;
-    background: #ddd;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .side-block:first-child {
@@ -56,6 +96,9 @@ body {
 /* Footer */
 
 #footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #09c;
 }
 
 /* end Footer */
