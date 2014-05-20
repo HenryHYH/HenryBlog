@@ -2,6 +2,60 @@ body {
     font-family: Arial;
 }
 
+/* 头部 */
+
+#header {
+    border-bottom: 1px solid #999;
+}
+
 #logo {
     margin: 23px;
+    color: #333;
 }
+
+/* end 头部 */
+
+/* 内容 */
+
+#main-content {
+    float: right;
+    margin-left: -250px;
+    width: 100%;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 10px;
+}
+
+/* side */
+
+#sidebar {
+    float: left;
+    width: 233px;
+    border: solid 1px #999;
+    border-left: none;
+    border-top: none;
+    padding: 12px 8px;
+}
+
+.side-block {
+    border: solid 1px #999;
+    background: #ddd;
+    margin-top: 8px;
+}
+
+.side-block:first-child {
+    margin-top: 0px;
+}
+
+/* end side */
+
+/* end 内容 */
+
+/* Footer */
+
+#footer {
+}
+
+/* end Footer */
