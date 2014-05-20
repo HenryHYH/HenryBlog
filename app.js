@@ -56,7 +56,7 @@ app.use(function(err, req, res, next) {
 });
 
 var server = app.listen(18080, function() {
-    console.log('Listening on port %d', server.address().port);
+    // console.log('Listening on port %d', server.address().port);
 });
 
 module.exports = app;
