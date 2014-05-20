@@ -1,8 +1,8 @@
 var
-    favicon = require('static-favicon'),
-    logger = require('morgan'),
-    cookieParser = require('cookie-parser'),
-    bodyParser = require('body-parser'),
+    // favicon = require('static-favicon'),
+    // logger = require('morgan'),
+    // cookieParser = require('cookie-parser'),
+    // bodyParser = require('body-parser'),
     path = require('path'),
     ejs = require('ejs'), // ejs template
     partials = require('express-partials'), // support partials
