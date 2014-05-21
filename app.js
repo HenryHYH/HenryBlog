@@ -1,8 +1,8 @@
 var
-    // favicon = require('static-favicon'),
-    // logger = require('morgan'),
-    // cookieParser = require('cookie-parser'),
-    // bodyParser = require('body-parser'),
+// favicon = require('static-favicon'),
+// logger = require('morgan'),
+// cookieParser = require('cookie-parser'),
+// bodyParser = require('body-parser'),
     path = require('path'),
     ejs = require('ejs'), // ejs template
     partials = require('express-partials'), // support partials
@@ -15,7 +15,10 @@ var routes = require('./routes/index'),
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.engine('.html', ejs.__express);
+app.set('view engine', 'html');
+partials.register('.html', ejs);
+
 
 // 将 ejs 的标签由原来的 <% %> 改为 {{ }}
 ejs.open = '{{';
