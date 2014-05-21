@@ -47,7 +47,7 @@ a:hover, a:active {
 #header .menu li {
 	float: left;
 	padding: 8px;
-	margin: 0px 20px;
+	margin: 0 20px;
 }
 
 #auth {
@@ -68,17 +68,15 @@ a:hover, a:active {
 
 /* 内容 */
 
-#main-content {
-	float: right;
-	margin-left: -250px;
-	width: 100%;
+#main-warp {
+	margin: 0 auto;
 }
 
 #content {
-	margin-left: 250px;
+	margin-right: 240px;
 	padding: 10px;
-	border-left: solid 1px #09c;
 	min-height: 600px;
+	border-right: solid 1px #09c;
 }
 
 /* end 内容 */
@@ -86,9 +84,9 @@ a:hover, a:active {
 /* side */
 
 #sidebar {
-	float: left;
-	width: 233px;
-	padding: 15px 8px;
+	width: 230px;
+	float: right;
+	padding: 15px 0;
 }
 
 .side-block {
@@ -96,14 +94,13 @@ a:hover, a:active {
 }
 
 .side-block:first-child {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .side-block .title {
 	font-weight: bold;
 	font-size: 1.2em;
 	color: #09c;
-	white-space: nowrap;
 }
 
 .side-block .body {
@@ -115,7 +112,7 @@ a:hover, a:active {
 /* Footer */
 
 #footer {
-	padding: 20px 0px;
+	padding: 20px 0;
 	text-align: center;
 	border-top: 1px solid #09c;
 }

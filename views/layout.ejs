@@ -29,22 +29,22 @@
 </div>
 <!--header end-->
 
-<!--main-content start-->
-<div id="main-content">
+<div id="main-warp">
+
+    <!--sidebar start-->
+    <div id="sidebar">
+        {{- partial('share/sideBlock') }}
+        {{- partial('share/sideBlock') }}
+    </div>
+    <!--sidebar end-->
+
+    <!--content start-->
     <div id="content">
         {{- body -}}
     </div>
-</div>
-<!--main-content end-->
+    <!--content end-->
 
-<!--sidebar start-->
-<div id="sidebar">
-    {{- partial('share/sideBlock') }}
-    {{- partial('share/sideBlock') }}
-    {{- partial('share/sideBlock') }}
-    {{- partial('share/sideBlock') }}
 </div>
-<!--sidebar end-->
 
 <div class="clear"></div>
 
