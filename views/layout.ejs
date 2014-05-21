@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{= title }}</title>
+    <title>{{= title }} - Enjoy Life</title>
     <link rel="stylesheet" href="/css/reset.css"/>
     <link rel="stylesheet" href="/css/global.css"/>
 </head>
 <body>
 
+<!--header start-->
 <div id="header">
-    <h1 id="logo">Henry</h1>
+    <h1 id="logo"><a href="/">Enjoy Life</a></h1>
 
     <ul class="menu">
         <li><a href="#">日志</a></li>
@@ -24,21 +25,32 @@
         <a id="register" href="#">注册</a>
     </div>
 </div>
-<div id="sidebar">
-    <div class="side-block">Block</div>
-    <div class="side-block">Block</div>
-    <div class="side-block">Block</div>
-    <div class="side-block">Block</div>
-</div>
+<!--header end-->
+
+<!--main-content start-->
 <div id="main-content">
     <div id="content">
         {{- body -}}
     </div>
 </div>
+<!--main-content end-->
+
+<!--sidebar start-->
+<div id="sidebar">
+    {{- partial('share/sideBlock') }}
+    {{- partial('share/sideBlock') }}
+    {{- partial('share/sideBlock') }}
+    {{- partial('share/sideBlock') }}
+</div>
+<!--sidebar end-->
+
 <div class="clear"></div>
+
+<!--footer start-->
 <div id="footer">
     Copyright &copy; - <strong>Henry</strong> - {{= new Date().getFullYear() }}
 </div>
+<!--footer end-->
 
 </body>
 </html>

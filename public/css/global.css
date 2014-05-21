@@ -1,59 +1,61 @@
 /* 公共 */
 
 body {
-    font-family: Arial;
-    background-color: #fff;
-    color: #555;
+	font-family: Arial;
+	background-color: #fff;
+	color: #444;
 }
 
 a:link, a:visited {
-    color: #09c;
-    text-decoration: none;
+	color: #09c;
+	text-decoration: none;
 }
 
 a:hover, a:active {
-    color: #366;
-    text-decoration: none;
+	color: #369;
+	text-decoration: none;
 }
 
-.clear {
-    clear: both;
-}
+.clear { clear: both; }
 
 /* end 公共 */
 
 /* 头部 */
 
 #header {
-    border-bottom: 1px solid #09c;
-    height: 56px;
+	border-bottom: 1px solid #09c;
+	height: 56px;
 }
 
 #logo {
-    margin: 23px;
+	margin: 23px;
+}
+
+#logo a {
+	color: #00755E;
 }
 
 #header .menu {
-    float: left;
-    margin-top: -33px;
-    margin-left: 260px;
-    font-weight: bold;
+	float: left;
+	margin-top: -33px;
+	margin-left: 260px;
+	font-weight: bold;
 }
 
 #header .menu li {
-    float: left;
-    padding: 8px;
-    margin: 0px 20px;
+	float: left;
+	padding: 8px;
+	margin: 0px 20px;
 }
 
 #auth {
-    position: absolute;
-    top: 10px;
-    right: 25px;
+	position: absolute;
+	top: 10px;
+	right: 25px;
 }
 
 #auth a {
-    padding: 5px;
+	padding: 5px;
 }
 
 /* end 头部 */
@@ -61,44 +63,55 @@ a:hover, a:active {
 /* 内容 */
 
 #main-content {
-    float: right;
-    margin-left: -250px;
-    width: 100%;
+	float: right;
+	margin-left: -250px;
+	width: 100%;
 }
 
 #content {
-    margin-left: 250px;
-    padding: 10px;
-    border-left: solid 1px #09c;
-    min-height: 600px;
+	margin-left: 250px;
+	padding: 10px;
+	border-left: solid 1px #09c;
+	min-height: 600px;
 }
+
+/* end 内容 */
 
 /* side */
 
 #sidebar {
-    float: left;
-    width: 233px;
-    padding: 12px 8px;
+	float: left;
+	width: 233px;
+	padding: 15px 8px;
 }
 
 .side-block {
-    margin-top: 10px;
+	margin-top: 15px;
 }
 
 .side-block:first-child {
-    margin-top: 0px;
+	margin-top: 0px;
+}
+
+.side-block .title {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #09c;
+	white-space: nowrap;
+}
+
+.side-block .body {
+	padding: 8px;
 }
 
 /* end side */
 
-/* end 内容 */
-
 /* Footer */
 
 #footer {
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid #09c;
+	padding: 20px 0px;
+	text-align: center;
+	border-top: 1px solid #09c;
 }
 
 /* end Footer */
