@@ -18,6 +18,8 @@ a:hover, a:active {
 
 .clear { clear: both; }
 
+.text-highlight { color: #09c; }
+
 /* end 公共 */
 
 /* 头部 */
@@ -54,8 +56,12 @@ a:hover, a:active {
 	right: 25px;
 }
 
-#auth a {
+#auth a, #auth span {
 	padding: 5px;
+}
+
+#auth-account, #logout {
+	display: none;
 }
 
 /* end 头部 */
