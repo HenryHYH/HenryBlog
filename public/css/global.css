@@ -1,22 +1,10 @@
 /* 公共 */
 
-body {
-	font-family: Arial, serif;
-	/*background-color: #fff;*/
-	background: #fff url(../img/bg.png) repeat;
-	color: #222;
-	min-width: 1000px;
-}
+body { font-family: Arial, serif; background: #fff url(../img/bg.png) repeat; color: #222; min-width: 1000px; }
 
-a:link, a:visited {
-	color: #09c;
-	text-decoration: none;
-}
+a:link, a:visited { color: #09c; text-decoration: none; }
 
-a:hover, a:active {
-	color: #369;
-	text-decoration: none;
-}
+a:hover, a:active { color: #369; text-decoration: none; }
 
 .clear { clear: both; }
 
@@ -26,111 +14,64 @@ a:hover, a:active {
 
 /* 头部 */
 
-#fixed-header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
+#fixed-header { position: fixed; top: 0; width: 100%; }
 
-#header {
-	position: absolute;
-	width: 100%;
-	height: 50px;
-	background-color: #369;
-}
+#header { position: absolute; width: 100%; height: 50px; background-color: #369; }
 
-#header a {
-	color: #fff;
-}
+#header a { color: #fff; }
 
-#header a:hover, a:active {
-	color: #09c;
-}
+#header a:hover, a:active { color: #09c; }
 
-#logo {
-	float: left;
-	padding: 8px 40px;
-	display: inline-block;
-}
+#logo { float: left; padding: 8px 40px; display: inline-block; }
 
-#header .menu {
-	font-weight: bold;
-	float: left;
-	margin-top: 10px;
-}
+#header .menu { font-weight: bold; float: left; margin-top: 10px; }
 
-#header .menu li {
-	float: left;
-	padding: 8px;
-	margin: 0 20px;
-}
+#header .menu li { float: left; padding: 8px; margin: 0 20px; }
 
-#auth {
-	float: right;;
-	margin-top: 17px;
-	margin-right: 20px;
-}
+#auth { float: right;; margin-top: 17px; margin-right: 20px; }
 
-#auth a, #auth span {
-	padding: 5px;
-}
+#auth a, #auth span { padding: 5px; }
 
-#auth-account, #logout {
-	display: none;
-}
+#auth-account, #logout { display: none; }
 
 /* end 头部 */
 
 /* 内容 */
 
-#main-warp {
-	margin: 50px auto 0;
-}
+#main-warp { margin: 50px auto 0; }
 
-#content {
-	margin-right: 240px;
-	padding: 10px;
-	min-height: 872px;
-	border-right: solid 1px #369;
-}
+#content { margin-right: 240px; padding: 10px; min-height: 872px; border-right: solid 1px #369; }
 
 /* end 内容 */
 
 /* side */
 
-#sidebar {
-	width: 230px;
-	float: right;
-	padding: 15px 0;
-}
+#sidebar { width: 230px; float: right; padding: 15px 0; }
 
-.side-block {
-	margin-top: 15px;
-}
+.side-block { margin-top: 15px; }
 
-.side-block:first-child {
-	margin-top: 0;
-}
+.side-block:first-child { margin-top: 0; }
 
-.side-block .title {
-	font-weight: bold;
-	font-size: 1.2em;
-	color: #369;
-}
+.side-block .title { font-weight: bold; font-size: 1.2em; color: #369; }
 
-.side-block .body {
-	padding: 8px;
-}
+.side-block .body { padding: 8px; }
 
 /* end side */
 
 /* Footer */
 
-#footer {
-	padding: 10px 0;
-	text-align: center;
-	background: #369;
-	color: #fff;
-}
+#footer { padding: 10px 0; text-align: center; background: #369; color: #fff; }
 
 /* end Footer */
+
+/* list */
+
+.list { }
+
+.list .item { width: 100%; border: solid 1px #ccc; margin-top: 15px; padding: 0px; }
+
+.list .item:first-child { margin-top: 0px; }
+
+.list .item .content { margin: 15px; }
+
+/*list end*/
