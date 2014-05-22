@@ -1,9 +1,11 @@
 /* 公共 */
 
 body {
-	font-family: Arial;
-	background-color: #fff;
-	color: #444;
+	font-family: Arial, serif;
+	/*background-color: #fff;*/
+	background: #fff url(../img/bg.png) repeat;
+	color: #222;
+	min-width: 1000px;
 }
 
 a:link, a:visited {
@@ -24,24 +26,37 @@ a:hover, a:active {
 
 /* 头部 */
 
+#fixed-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 #header {
-	border-bottom: 1px solid #09c;
-	height: 56px;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #369;
+}
+
+#header a {
+	color: #fff;
+}
+
+#header a:hover, a:active {
+	color: #09c;
 }
 
 #logo {
-	margin: 23px;
-}
-
-#logo a {
-	color: #00755E;
+	float: left;
+	padding: 8px 40px;
+	display: inline-block;
 }
 
 #header .menu {
-	float: left;
-	margin-top: -33px;
-	margin-left: 260px;
 	font-weight: bold;
+	float: left;
+	margin-top: 10px;
 }
 
 #header .menu li {
@@ -51,9 +66,9 @@ a:hover, a:active {
 }
 
 #auth {
-	position: absolute;
-	top: 10px;
-	right: 25px;
+	float: right;;
+	margin-top: 17px;
+	margin-right: 20px;
 }
 
 #auth a, #auth span {
@@ -69,14 +84,14 @@ a:hover, a:active {
 /* 内容 */
 
 #main-warp {
-	margin: 0 auto;
+	margin: 50px auto 0;
 }
 
 #content {
 	margin-right: 240px;
 	padding: 10px;
 	min-height: 600px;
-	border-right: solid 1px #09c;
+	border-right: solid 1px #369;
 }
 
 /* end 内容 */
@@ -100,7 +115,7 @@ a:hover, a:active {
 .side-block .title {
 	font-weight: bold;
 	font-size: 1.2em;
-	color: #09c;
+	color: #369;
 }
 
 .side-block .body {
@@ -112,9 +127,10 @@ a:hover, a:active {
 /* Footer */
 
 #footer {
-	padding: 20px 0;
+	padding: 10px 0;
 	text-align: center;
-	border-top: 1px solid #09c;
+	background: #369;
+	color: #fff;
 }
 
 /* end Footer */
