@@ -1,14 +1,25 @@
-<!--<p>Welcome to {{= title }}</p>-->
-
 <div class="list">
+    <!--<div class="item">-->
+    <!--<div class="content">-->
+    <!--Hello world-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="item">-->
+    <!--<div class="content">-->
+    <!--Hello world-->
+    <!--</div>-->
+    <!--</div>-->
+    {{ for(var i = 1; i <= len; i++ ) { }}
     <div class="item">
-        <div class="content">
-            Hello world
+        <div class="title">Title {{= i }}</div>
+        <div class="content" style="min-height: {{= (i % 3 + 1) * 150 }}px;">
+            Item {{= i }}<br>
+        </div>
+        <div class="footer">
+            <a class="text-highlight" href="/test/{{= i - 1 }}">
+                <span class="oi" data-glyph="magnifying-glass" title="详细阅读" aria-hidden="true">&nbsp;详细阅读</span>
+            </a>+
         </div>
     </div>
-    <div class="item">
-        <div class="content">
-            Hello world
-        </div>
-    </div>
+    {{ } }}
 </div>
