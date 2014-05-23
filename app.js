@@ -11,6 +11,7 @@ var
 
 var routes = require('./routes/index'),
     test = require('./routes/test'),
+    blog = require('./routes/blog'),
     users = require('./routes/users');
 
 // view engine setup
@@ -37,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/test', test);
+app.use('/blog', blog);
 
 /// catch 404 and forward to error handler
 app.use(function (req, res, next) {
