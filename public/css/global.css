@@ -21,6 +21,7 @@ a.text-highlight { color: #f60; }
 .header a:hover, a:active { color: #09c; }
 
 .logo { float: left; padding: 8px 40px; display: inline-block; }
+.logo i { font-size: 18px; }
 
 .header .nav { float: left; margin-top: 10px; }
 .nav { font-weight: bold; text-align: center; }
