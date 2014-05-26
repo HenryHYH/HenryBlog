@@ -1,0 +1,15 @@
+<div class="flow">
+    {{ for(var i = 1; i <= len; i++ ) { }}
+    <div class="item">
+        <div class="title">Title {{= i }}</div>
+        <div class="content" style="height: 150px;">
+            Item {{= i }}<br>
+        </div>
+        <div class="footer">
+            <a class="text-highlight" href="/blog/{{= i }}">
+                <span class="oi" data-glyph="magnifying-glass" title="详细阅读" aria-hidden="true">&nbsp;详细阅读</span>
+            </a>+
+        </div>
+    </div>
+    {{ } }}
+</div>
