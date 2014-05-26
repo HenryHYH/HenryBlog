@@ -37,7 +37,7 @@ a.text-highlight { color: #f60; }
 
 /* 内容 */
 
-#content { margin-top: 40px; margin-right: 240px; padding: 20px; min-height: 860px; border-right: solid 1px #369; box-shadow: 1px 1px 1px #369; }
+#content { margin-top: 50px; margin-right: 240px; padding: 20px; min-height: 830px; border-right: solid 1px #369; box-shadow: 1px 1px 1px #369; }
 
 /* end 内容 */
 
@@ -62,10 +62,12 @@ a.text-highlight { color: #f60; }
 /* list */
 
 .list { }
-.list .item { width: 23%; margin-top: 15px; margin-left: 1%; box-shadow: 2px 2px 8px #369; border-radius: 5px; display: inline-table; }
-.list .item .title { font-weight: bold; font-size: 1.1em; padding: 8px; background: #369; color: #fff; border-radius: 5px 5px 0 0; }
-.list .item .content { margin: 15px; line-height: 1.1; }
-.list .item .footer { padding: 5px 8px; text-align: right; font-size: 13px; color: #666; }
+.list .item { width: 100%; margin-bottom: 30px; border-bottom: 1px #ccc solid; }
+.list .item .title { font-weight: bold; font-size: 1.1em; }
+.list .item .content { margin: 15px 4px; line-height: 1.1; padding: 5px }
+.list .item .footer { padding: 5px 8px; font-size: 13px; }
+.list .item .footer .info { margin-right: 12px; }
+.list .item .footer .link { float: right; }
 
 /*list end*/
 
