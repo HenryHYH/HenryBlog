@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{= title }} - Enjoy Life</title>
+    <title>{{= typeof(title) === 'undefined' ? '' : title + ' - ' }}Enjoy Life</title>
     <link rel="stylesheet" href="/css/reset.css"/>
     <link rel="stylesheet" href="/lib/foundation-icon/foundation-icons.css"/>
     <link rel="stylesheet" href="/css/global.css"/>

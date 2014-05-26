@@ -65,9 +65,10 @@ a.text-highlight { color: #f60; }
 .list .item { width: 100%; margin-bottom: 30px; border-bottom: 1px #ccc solid; }
 .list .item .title { font-weight: bold; font-size: 1.1em; }
 .list .item .content { margin: 15px 4px; line-height: 1.1; padding: 5px }
-.list .item .footer { padding: 5px 8px; font-size: 13px; }
-.list .item .footer .info { margin-right: 12px; }
-.list .item .footer .link { float: right; }
+.list .item .footer { padding: 5px 8px; font-size: 13px; text-align: right; }
+.list .item .footer .info { margin-right: 10px; }
+.list .item .footer .info:last-child { margin-right: 0; }
+.list .item .footer .link { float: left; }
 
 /*list end*/
 
