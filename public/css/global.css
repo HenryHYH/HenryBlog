@@ -81,3 +81,16 @@ a.text-highlight { color: #f60; }
 .flow .item .footer { padding: 5px 8px; text-align: right; font-size: 13px; color: #666; }
 
 /* flow end */
+
+/* block */
+
+.blog { padding: 0 10px; }
+.blog .title { border-bottom: 1px solid #369; color: #369; padding-bottom: 5px; }
+.blog .content { padding: 15px 0; line-height: 20px; }
+.blog .pager { padding: 5px; text-align: center; }
+.blog .pager .next { margin-left: 50px; }
+.blog .info { padding: 5px; font-size: 13px; text-align: right; border-top: 1px dashed #369; }
+.blog .info .item { margin-left: 10px; }
+.blog .comment { padding: 15px 0; }
+
+/* block end */
