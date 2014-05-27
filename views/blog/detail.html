@@ -10,16 +10,20 @@
     </div>
 
     <div class="info">
-        <span class="item"> 分类: <a href="#">Category</a></span>
-        <span class="item"> 标签: <a href="#">Tag</a> <a href="#">Tag</a> <a href="#">Tag</a></span>
+        <span class="item"> 分类: <a href="/blog/category/{{= blog.Category }}">{{- blog.Category }}</a></span>
+        <span class="item"> 标签:&nbsp;
+            {{ blog.Tags.forEach(function(tag, index) { }}
+            <a href="/blog/tag/{{= tag }}">{{- tag }}</a>&nbsp;
+            {{ }); }}
+        </span>
         <span class="item"> 阅读:({{- blog.CntRead }})</span>
     </div>
 
     <div class="comment">
-        <div class="comment-title">评论列表 {{- blog.Comments[0].Author }}</div>
+        <div class="comment-title">评论列表</div>
         {{ blog.Comments.forEach(function(item, index) { }}
         <div class="comment-item">
-            <div class="comment-item-title">#{{- index + 1 }} {{- item.Author }} @ {{- item.CreateTime }}
+            <div class="comment-item-title">#{{- index + 1 }} {{- item.Author }} @ {{- item.CreateTime.format() }}
             </div>
             <div class="comment-item-content">{{- item.Comment }}</div>
         </div>

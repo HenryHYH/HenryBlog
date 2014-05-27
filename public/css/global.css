@@ -68,6 +68,7 @@ a.text-highlight { color: #f60; }
 .list .item .footer { padding: 5px 8px; font-size: 13px; text-align: right; }
 .list .item .footer .info { margin-right: 10px; }
 .list .item .footer .info:last-child { margin-right: 0; }
+.list .item .footer .info a { border-bottom: 1px dotted #09c; }
 .list .item .footer .link { float: left; }
 
 /*list end*/
@@ -84,13 +85,14 @@ a.text-highlight { color: #f60; }
 
 /* block */
 
-.blog { padding: 0 10px; }
-.blog .title { border-bottom: 1px solid #369; color: #369; padding-bottom: 5px; }
+.blog { }
+.blog .title { border-bottom: 1px solid #09c; color: #09c; padding-bottom: 5px; }
 .blog .content { padding: 15px; line-height: 20px; }
 .blog .pager { padding: 5px; text-align: center; }
 .blog .pager .next { margin-left: 50px; }
 .blog .info { padding: 5px; font-size: 13px; text-align: right; border-top: 1px dashed #369; }
 .blog .info .item { margin-left: 10px; }
+.blog .info .item a { border-bottom: 1px dotted #09c; }
 .blog .comment { padding: 15px 0; }
 .blog .comment-title { border-bottom: 1px solid #666; padding-bottom: 5px; margin-bottom: 20px; font-weight: bold; }
 .blog .comment-item { margin-bottom: 20px; border-bottom: 1px solid #ccc; }

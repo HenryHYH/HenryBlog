@@ -1,21 +1,22 @@
 <div class="list">
-    {{ for(var i = 1; i <= len; i++ ) { }}
+    {{ list.forEach(function(item, index){ }}
     <div class="item">
         <div class="title">
-            <a href="/blog/{{= i }}">Title {{= i }}</a>
+            <a href="/blog/{{- item.Id }}">{{- item.Title}}</a>
         </div>
-        <div class="content">
-            Item {{= i }}<br/>
-            Item {{= i }}
-        </div>
+        <div class="content">{{- item.Description }}</div>
         <div class="footer">
-            <a class="text-highlight link" href="/blog/{{= i }}"> 详细阅读 </a>
-            <span class="info"> Henry post @ {{= new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate() }}</span>
-            <span class="info"> 分类:<a href="#">Category</a></span>
-            <span class="info"> 标签:<a href="#">Tag</a> <a href="#">Tag</a> <a href="#">Tag</a></span>
-            <span class="info"> 阅读:(0)</span>
-            <span class="info"> 评论:(0)</span>
+            <a class="text-highlight link" href="/blog/{{- item.Id }}"> 详细阅读 </a>
+            <span class="info"> {{- item.Author }} @ {{- item.CreateTime.format() }}</span>
+            <span class="info"> 分类: <a href="/blog/category/{{= item.Category }}">{{- item.Category }}</a></span>
+            <span class="info"> 标签:&nbsp;
+                {{ item.Tags.forEach(function(tag, index) { }}
+                <a href="/blog/tag/{{= tag }}">{{- tag }}</a>&nbsp;
+                {{ }); }}
+            </span>
+            <span class="info"> 阅读:({{- item.CntRead }})</span>
+            <span class="info"> 评论:({{- item.CntComment }})</span>
         </div>
     </div>
-    {{ } }}
+    {{ }); }}
 </div>
