@@ -59,6 +59,15 @@ a.text-highlight { color: #f60; }
 
 /* end Footer */
 
+/* toolbar */
+
+.toolbar { text-align: right; }
+.toolbar .edit { color: #0c0; }
+.toolbar .delete { color: #c00; }
+.toolbar a { margin-left: 10px; }
+
+/* toolbar end */
+
 /* list */
 
 .list { }

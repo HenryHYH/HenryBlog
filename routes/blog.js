@@ -53,6 +53,7 @@ router.get('/:id/edit', function (req, res) {
 // detail
 router.get('/:id', function (req, res) {
     var blog = {
+        Id: req.params.id,
         Title: 'Title',
         Content: '<p>Content content</p><p>Content</p>',
         CntRead: 1,
