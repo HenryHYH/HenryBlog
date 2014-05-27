@@ -1,16 +1,8 @@
 <div class="blog">
 
-    <h2 class="title">Title</h2>
+    <h2 class="title">{{- blog.Title }}</h2>
 
-    <div class="content">
-        <p>
-            Content Content Content
-        </p>
-
-        <p>
-            Content
-        </p>
-    </div>
+    <div class="content">{{- blog.Content }}</div>
 
     <div class="pager">
         <a href="#"><i class="fi-arrow-left"></i> Previous blog</a>
@@ -20,14 +12,18 @@
     <div class="info">
         <span class="item"> 分类: <a href="#">Category</a></span>
         <span class="item"> 标签: <a href="#">Tag</a> <a href="#">Tag</a> <a href="#">Tag</a></span>
-        <span class="item"> 阅读:(0)</span>
+        <span class="item"> 阅读:({{- blog.CntRead }})</span>
     </div>
 
     <div class="comment">
-        <ul>
-            <li>Comment</li>
-            <li>Comment</li>
-        </ul>
+        <div class="comment-title">评论列表 {{- blog.Comments[0].Author }}</div>
+        {{ blog.Comments.forEach(function(item, index) { }}
+        <div class="comment-item">
+            <div class="comment-item-title">#{{- index + 1 }} {{- item.Author }} @ {{- item.CreateTime }}
+            </div>
+            <div class="comment-item-content">{{- item.Comment }}</div>
+        </div>
+        {{ }); }}
     </div>
 
 </div>
