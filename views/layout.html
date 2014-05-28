@@ -3,7 +3,7 @@
 <head>
     <title>{{= typeof(title) === 'undefined' ? '' : title + ' - ' }}Enjoy Life</title>
     <link rel="stylesheet" href="/css/reset.css"/>
-    <link rel="stylesheet" href="/lib/foundation-icon/foundation-icons.css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/global.css"/>
 </head>
 <body>
@@ -12,13 +12,13 @@
 <div id="fixed-header">
     <div id="header" class="header">
         <div id="auth">
-            <a id="login" href="#">登录</a>
-            <a id="register" href="#">注册</a>
+            <a id="login" href="#"><i class="fa fa-sign-in fa-fw"></i>登录</a>
+            <a id="register" href="#"><i class="fa fa-user fa-fw"></i>注册</a>
             <span id="auth-account" class="text-highlight">Henry</span>
-            <a id="logout" href="#">注销</a>
+            <a id="logout" href="#"><i class="fa fa-sign-out fa-fw"></i>注销</a>
         </div>
 
-        <h1 id="logo" class="logo"><a href="/">Enjoy Life <i class="fi-home"></i></a></h1>
+        <h1 id="logo" class="logo"><a href="/">Enjoy Life <i class="fa fa-home"></i></a></h1>
 
         {{- partial('share/nav') }}
     </div>
