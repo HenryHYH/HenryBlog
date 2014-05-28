@@ -62,8 +62,9 @@ a.text-highlight { color: #f60; }
 /* toolbar */
 
 .toolbar { text-align: right; }
-.toolbar .edit { color: #0c0; }
-.toolbar .delete { color: #c00; }
+.add { color: #09c; }
+.edit, .toolbar .edit { color: #0c0; }
+.delete, .cancel, .toolbar .delete { color: #c00; }
 .toolbar a { margin-left: 10px; }
 
 /* toolbar end */
@@ -109,3 +110,15 @@ a.text-highlight { color: #f60; }
 .blog .comment-item-content { padding: 20px; }
 
 /* block end */
+
+/* form */
+
+.form { }
+.form-title { margin-top: 25px; font-size: 15px; font-weight: bold; }
+.form-title:first-child { margin-top: 0; }
+.form-content { }
+.form-content .fix-width { width: 100%; }
+.form-btn-list { margin-top: 15px; text-align: center; }
+.form-btn-list button { font-weight: bold; }
+
+/* form end */
