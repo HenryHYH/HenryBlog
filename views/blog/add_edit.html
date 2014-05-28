@@ -1,28 +1,35 @@
-<form action="" method="post">
+<form action="{{- formAction }}" method="post">
 
     <dl class="form">
+
         <dt class="form-title">标题</dt>
         <dd class="form-content">
-            <input class="fix-width" type="text" name="Title"/>
+            <input class="fix-width" type="text" name="title" placeholder="标题"/>
         </dd>
+
         <dt class="form-title">正文</dt>
         <dd class="form-content">
-            <textarea class="fix-width" name="Content" cols="30" rows="10"></textarea>
+            <textarea class="fix-width" name="content" cols="30" rows="10" placeholder="正文"></textarea>
         </dd>
+
         <dt class="form-title">分类</dt>
         <dd class="form-content">
-            <input type="text" name="Category"/>
+            <input type="text" name="category" placeholder="分类"/>
         </dd>
+
         <dt class="form-title">标签</dt>
         <dd class="form-content">
-            <input type="text"/>
-            <input type="hidden" name="Tags"/>
+            <input type="text" placeholder="标签"/>
+            <input type="hidden" name="tags"/>
         </dd>
+
         <dd class="form-btn-list">
-            <button class="add" type="submit"><i class="fa fa-save fa-fw"></i>保存</button>
-            <button class="add" type="submit"><i class="fa fa-eject fa-fw"></i>保存并发布</button>
+            <button class="add" type="submit" name="submitType" value="save"><i class="fa fa-save fa-fw"></i>保存</button>
+            <button class="add" type="submit" name="submitType" value="publish"><i class="fa fa-eject fa-fw"></i>保存并发布
+            </button>
             <button class="cancel" type="button"><i class="fa fa-times fa-fw"></i>取消</button>
         </dd>
+
     </dl>
 
 </form>

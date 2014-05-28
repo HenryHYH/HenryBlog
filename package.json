@@ -7,9 +7,10 @@
         "start": "node app.js"
     },
     "dependencies": {
-		"express": "~4.2.0",
-		"ejs": "~0.8.5",
-		"express-partials": "*"
+        "express": "*",
+        "ejs": "*",
+        "express-partials": "*",
+        "body-parser": "*"
     }
 }
 

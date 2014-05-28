@@ -36,24 +36,38 @@ router.get('/', function (req, res) {
 
 // add
 router.get('/create', function (req, res) {
-    res.render('blog/add_edit');
+    var url = req.originalUrl;
+    if (url.indexOf('?') != -1)
+        url = url.substr(0, url.indexOf('?'));
+
+    res.render('blog/add_edit', {title: 'Blog', formAction: url});
 });
 
 router.post('/create', function (req, res) {
+    var title = req.param('title');
+
+    res.render('index', {title: title, len: 2});
 });
 
 // edit
 router.get('/:id/edit', function (req, res) {
-    res.render('blog/add_edit', {title: 'Blog'});
+    var url = req.originalUrl;
+    if (url.indexOf('?') != -1)
+        url = url.substr(0, url.indexOf('?'));
+
+    res.render('blog/add_edit', {title: 'Blog', formAction: url});
 });
 
-router.get('/:id/edit', function (req, res) {
+router.post('/:id/edit', function (req, res) {
+    var title = req.param('title');
+
+    res.render('index', {title: title, len: req.param('id')});
 });
 
 // detail
 router.get('/:id', function (req, res) {
     var blog = {
-        Id: req.params.id,
+        Id: req.param('id'),
         Title: 'Title',
         Content: '<p>Content content</p><p>Content</p>',
         CntRead: 1,
@@ -62,7 +76,7 @@ router.get('/:id', function (req, res) {
         Tags: ['Tag A', 'Tag B']
     };
 
-    for (var i = 1; i <= req.params.id; i++) {
+    for (var i = 1, iMax = req.param('id'); i <= iMax; i++) {
         blog.Comments.push({
             Author: 'Henry',
             Comment: 'Hello world',
@@ -81,7 +95,7 @@ router.get('/category/:category', function (req, res) {
     var list = MockData(5);
 
     res.render('blog/index', {
-        title: req.params.category,
+        title: req.param('category'),
         list: list
     });
 });
@@ -91,7 +105,7 @@ router.get('/tag/:tag', function (req, res) {
     var list = MockData(1);
 
     res.render('blog/index', {
-        title: req.params.tag,
+        title: req.param('tag'),
         list: list
     });
 });
