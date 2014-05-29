@@ -23,13 +23,22 @@ a.text-highlight { color: #f60; }
 .logo { float: left; padding: 8px 40px; display: inline-block; }
 .logo i { font-size: 18px; }
 
-.header .nav { float: left; margin-top: 10px; }
-.nav { font-weight: bold; position: relative; }
-.nav li { float: left; padding: 8px 40px; margin: 0 1px; }
-.nav li.active { background: #fff; box-shadow: 1px 1px 1px #fff; }
-.nav li.active a { color: #369; }
-.nav .sub { position: absolute; background: #0c0; border: 1px solid #fff; top: 32px; }
-.nav .sub li { float: none; padding: 8px 10px; }
+.header .nav { float: left; margin-top: 18px; }
+.nav { font-weight: bold; }
+.nav li { display: inline; position: relative; }
+.nav li a { padding: 8px; margin: 0 15px; }
+.nav li:hover a { border: 1px #fff solid; }
+.nav li:hover > .sub { display: block; }
+.nav .sub {
+	position: absolute;
+	top: 27px;
+	left: 15px;
+	background: #0c0;
+	display: none;
+	box-shadow: 1px 1px 1px #369;
+}
+.nav .sub li { white-space: nowrap; display: block; padding: 8px; }
+.nav .sub li a { margin: 0; padding: 0; border: none; }
 
 #auth { float: right;; margin-top: 17px; margin-right: 20px; }
 #auth a, #auth span { padding: 5px; }
