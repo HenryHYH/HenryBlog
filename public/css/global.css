@@ -24,10 +24,12 @@ a.text-highlight { color: #f60; }
 .logo i { font-size: 18px; }
 
 .header .nav { float: left; margin-top: 10px; }
-.nav { font-weight: bold; text-align: center; }
+.nav { font-weight: bold; position: relative; }
 .nav li { float: left; padding: 8px 40px; margin: 0 1px; }
 .nav li.active { background: #fff; box-shadow: 1px 1px 1px #fff; }
 .nav li.active a { color: #369; }
+.nav .sub { position: absolute; background: #0c0; border: 1px solid #fff; top: 32px; }
+.nav .sub li { float: none; padding: 8px 10px; }
 
 #auth { float: right;; margin-top: 17px; margin-right: 20px; }
 #auth a, #auth span { padding: 5px; }
