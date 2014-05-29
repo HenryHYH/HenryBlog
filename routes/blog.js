@@ -11,6 +11,7 @@ function MockData(cnt) {
         list.push({
             Id: i,
             Title: 'Title' + i,
+            Content: '<p>Hello world</p><p>Hello world</p>',
             Description: 'Hello world<br />Hello world',
             CntRead: i,
             Author: 'Henry',
@@ -55,7 +56,13 @@ router.get('/:id/edit', function (req, res) {
     if (url.indexOf('?') != -1)
         url = url.substr(0, url.indexOf('?'));
 
-    res.render('blog/add_edit', {title: 'Blog', formAction: url});
+    var blog = MockData(1)[0];
+
+    res.render('blog/add_edit', {
+        title: 'Blog',
+        formAction: url,
+        blog: blog
+    });
 });
 
 router.post('/:id/edit', function (req, res) {

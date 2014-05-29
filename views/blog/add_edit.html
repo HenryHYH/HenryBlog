@@ -4,22 +4,25 @@
 
         <dt class="form-title">标题</dt>
         <dd class="form-content">
-            <input class="fix-width" type="text" name="title" placeholder="标题"/>
+            <input class="lg-width" type="text" name="title" placeholder="标题"
+                   value="{{- typeof(blog) == 'undefined' ? '' : blog.Title }}"/>
         </dd>
 
         <dt class="form-title">正文</dt>
         <dd class="form-content">
-            <textarea class="fix-width" name="content" cols="30" rows="10" placeholder="正文"></textarea>
+            <textarea class="lg-width" name="content" cols="30" rows="10" placeholder="正文">{{-
+                typeof(blog) == 'undefined' ? '' : blog.Content }}</textarea>
         </dd>
 
         <dt class="form-title">分类</dt>
         <dd class="form-content">
-            <input type="text" name="category" placeholder="分类"/>
+            <input class="m-width" type="text" name="category" placeholder="分类"
+                   value="{{- typeof(blog) == 'undefined' ? '' : blog.Category }}"/>
         </dd>
 
         <dt class="form-title">标签</dt>
         <dd class="form-content">
-            <input type="text" placeholder="标签"/>
+            <input class="m-width" type="text" placeholder="标签"/>
             <input type="hidden" name="tags"/>
         </dd>
 
