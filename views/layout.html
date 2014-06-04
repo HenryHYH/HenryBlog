@@ -27,10 +27,8 @@
 
 <!--sidebar start-->
 <div id="sidebar">
-    {{- partial('share/sideBlock') }}
-    {{- partial('share/sideBlock') }}
+    {{- partial('share/sideBlock', { title: '博客', blogs: blogs }) }}
     {{- partial('share/sideImage') }}
-    {{- partial('share/sideBlock') }}
 </div>
 <!--sidebar end-->
 
