@@ -29,7 +29,7 @@ a.text-highlight { color: #f60; }
 .nav li a { padding: 8px; }
 .nav li:hover .link { background: #fff; color: #09c; }
 .nav li:hover > .sub { display: block; }
-.nav .sub { display: none; position: absolute; top: 27px; background: #369; box-shadow: 1px 1px 1px #369; }
+.nav .sub { display: none; position: absolute; left: 0; top: 27px; background: #369; box-shadow: 1px 1px 1px #369; }
 .nav .sub li:first-child { padding-top: 12px; }
 .nav .sub li:last-child { padding-bottom: 8px; }
 .nav .sub li { white-space: nowrap; display: block; padding: 0 0 12px; margin: 0; }
