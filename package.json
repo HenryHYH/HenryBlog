@@ -10,7 +10,8 @@
         "express": "*",
         "ejs": "*",
         "express-partials": "*",
-        "body-parser": "*"
+        "body-parser": "*",
+        "mongoose": "*"
     }
 }
 
