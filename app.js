@@ -13,7 +13,8 @@ var routes = require('./routes/index'),
     test = require('./routes/test'),
     blog = require('./routes/blog'),
     users = require('./routes/users'),
-    gallery = require('./routes/gallery');
+    gallery = require('./routes/gallery'),
+    testPure = require('./routes/testPure');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -41,6 +42,7 @@ app.use('/users', users);
 app.use('/test', test);
 app.use('/blog', blog);
 app.use('/gallery', gallery);
+app.use('/testPure', testPure);
 
 /// catch 404 and forward to error handler
 app.use(function (req, res, next) {
