@@ -3,13 +3,18 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Test Css</title>
-    <link type="text/css" rel="stylesheet" href="/SemanticUI/css/semantic.min.css" />
+    <link type="text/css" rel="stylesheet" href="/SemanticUI/css/semantic.min.css"/>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-    <script type="text/javascript" src="/SemanticUI/javascript/semantic.min.js"></script>
+    <script type="text/javascript" src="/SemanticUI/javascript/semantic.js"></script>
+    <style type="text/css">
+        body {
+            font-family: Arial, serif;
+        }
+    </style>
 </head>
 <body>
 
-<div class="ui tiered menu">
+<div class="ui tiered blue menu">
     <div class="menu">
         <a class="active item">
             <i class="users icon"></i>
@@ -21,6 +26,7 @@
         <a class="item">
             <i class="mail icon"></i> 消息
         </a>
+
         <div class="right menu">
             <div class="item">
                 <div class="ui icon input">
@@ -28,8 +34,9 @@
                     <i class="search icon"></i>
                 </div>
             </div>
-            <div class="ui dropdown item">
+            <div class="ui simple dropdown item">
                 More <i class="icon dropdown"></i>
+
                 <div class="menu">
                     <a class="item"><i class="edit icon"></i>编辑个人信息</a>
                     <a class="item"><i class="globe icon"></i>选择语言</a>
@@ -38,59 +45,66 @@
             </div>
         </div>
     </div>
-    <div class="ui sub menu">
-        <a class="active item">搜索中</a>
-        <a class="item">添加</a>
-        <a class="item">删除</a>
+</div>
+
+<div class="ui grid">
+    <div class="equal height row">
+        <div class="thirteen wide column">
+            <div class="ui segment"><b>第一列</b>爱酷学习网：免费提供高清在线观看视频教程。</div>
+        </div>
+        <div class="three wide column">
+            <div class="ui fluid vertical menu">
+                <div class="header item">
+                    <i class="user icon"></i>
+                    Communities
+                </div>
+                <div class="item">
+                    College
+                    <div class="menu">
+                        <a class="item">Baseball</a>
+                        <a class="item">Basketball</a>
+                        <a class="item">Golf</a>
+                    </div>
+                </div>
+                <a class="item">
+                    Dance
+                </a>
+                <a class="item">
+                    Aerobics
+                </a>
+
+                <div class="header item">
+                    <i class="globe icon"></i>
+                    Cities
+                </div>
+                <a class="item">
+                    New York
+                </a>
+                <a class="item">
+                    Montreal
+                </a>
+                <a class="item">
+                    Los Angeles
+                </a>
+                <a class="item">
+                    San Francisco
+                </a>
+
+                <div class="header item">
+                    <i class="icon calendar"></i>
+                    Months
+                </div>
+                <a class="item">
+                    August
+                </a>
+                <a class="item">
+                    June
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="ui six column divided grid">
-    <div class="row">
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-        <div class="column">
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-            <p>爱酷学习网：免费提供高清在线观看视频教程。</p>
-        </div>
-    </div>
-</div>
 
 </body>
 </html>
