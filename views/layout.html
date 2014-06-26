@@ -1,50 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
+    <meta charset="UTF-8">
+
     <title>{{= typeof(title) === 'undefined' ? '' : title + ' - ' }}Enjoy Life</title>
-    <link rel="stylesheet" href="/css/reset.css"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css"/>
+
+    <link type="text/css" rel="stylesheet" href="/lib/SemanticUI/css/semantic.min.css"/>
+    <script type="text/javascript" src="/lib/jQuery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/lib/SemanticUI/javascript/semantic.js"></script>
+    <style type="text/css">
+        body {
+            font-family: Arial, serif;
+        }
+    </style>
 </head>
 <body>
 
-<!--header start-->
-<div id="fixed-header">
-    <div id="header" class="header">
-        <div id="auth">
-            <a id="login" href="#"><i class="fa fa-sign-in fa-fw"></i>登录</a>
-            <a id="register" href="#"><i class="fa fa-user fa-fw"></i>注册</a>
-            <span id="auth-account" class="text-highlight">Henry</span>
-            <a id="logout" href="#"><i class="fa fa-sign-out fa-fw"></i>注销</a>
+<div class="ui menu">
+    <div class="menu">
+        <a class="active orange item">
+            <i class="icon home"></i> Enjoy life
+        </a>
+        <a class="teal item">
+            <i class="browser icon"></i> 日志
+        </a>
+        <a class="purple item">
+            <i class="photo icon"></i> 相册
+        </a>
+
+        <div class="right menu">
+
+            <div class="item">
+                <div class="ui blue button"><i class="icon sign in"></i> 登录</div>
+                <div class="ui green button"><i class="icon user"></i> 注册</div>
+            </div>
+
+            <div class="ui simple dropdown item">
+                <i class="icon users"></i> 个人中心 <i class="icon dropdown"></i>
+
+                <div class="menu">
+                    <a class="item"><i class="edit icon"></i>编辑个人信息</a>
+                    <a class="item"><i class="globe icon"></i>选择语言</a>
+                    <a class="item"><i class="settings icon"></i>账户设置</a>
+                </div>
+            </div>
         </div>
-
-        <h1 id="logo" class="logo"><a href="/">Enjoy Life <i class="fa fa-home"></i></a></h1>
-
-        {{- partial('share/nav') }}
     </div>
 </div>
-<!--header end-->
 
-<!--sidebar start-->
-<div id="sidebar">
-    {{- partial('share/sideBlock', { title: '博客', blogs: blogs }) }}
-    {{- partial('share/sideImage') }}
+<div class="ui grid">
+    <div class="equal height row">
+        <div class="thirteen wide column">
+            {{- body }}
+        </div>
+        <div class="three wide column">
+            <div class="ui fluid vertical menu">
+                <a class="header item">
+                    日志
+                    <i class="user icon"></i>
+                </a>
+
+                <div class="item">
+                    College
+                    <div class="menu">
+                        <a class="item">Baseball</a>
+                        <a class="item">Basketball</a>
+                        <a class="item">Golf</a>
+                    </div>
+                </div>
+                <a class="item">
+                    Dance
+                </a>
+                <a class="item">
+                    Aerobics
+                </a>
+
+                <a class="header item">
+                    <i class="globe icon"></i>
+                    相册
+                </a>
+                <a class="item">
+                    New York
+                </a>
+                <a class="item">
+                    Montreal
+                </a>
+                <a class="item">
+                    Los Angeles
+                </a>
+                <a class="item">
+                    San Francisco
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
-<!--sidebar end-->
-
-<!--content start-->
-<div id="content">
-    {{- body }}
-</div>
-<!--content end-->
-
-<div class="clear"></div>
-
-<!--footer start-->
-<div id="footer">
-    Copyright &copy; - <strong>Henry</strong> - {{= new Date().getFullYear() }}
-</div>
-<!--footer end-->
 
 </body>
 </html>

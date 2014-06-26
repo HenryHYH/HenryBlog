@@ -2,7 +2,9 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Test Css</title>
+
+    <title>{{= typeof(title) === 'undefined' ? '' : title + ' - ' }}Enjoy Life</title>
+
     <link type="text/css" rel="stylesheet" href="/lib/SemanticUI/css/semantic.min.css"/>
     <script type="text/javascript" src="/lib/jQuery/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/lib/SemanticUI/javascript/semantic.js"></script>
@@ -49,112 +51,7 @@
 <div class="ui grid">
     <div class="equal height row">
         <div class="thirteen wide column">
-            <div class="ui teal stacked segment">
-                <h2 class="ui teal header">日志</h2>
-
-                <div class="ui very relaxed divided list">
-                    <div class="item">
-                        <div class="ui right floated labels">
-                            <div class="ui blue label">
-                                <i class="icon unhide"></i> 25
-                            </div>
-                            <div class="ui teal label">
-                                <i class="icon comment outline"></i> 23
-                            </div>
-                        </div>
-
-                        <i class="map marker icon"></i>
-
-                        <div class="content">
-                            <a class="header">New York City</a>
-
-                            <div class="description">A lovely city</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="ui right floated labels">
-                            <div class="ui blue label">
-                                <i class="icon unhide"></i> 25
-                            </div>
-                            <div class="ui teal label">
-                                <i class="icon comment outline"></i> 23
-                            </div>
-                        </div>
-
-                        <i class="map marker icon"></i>
-
-                        <div class="content">
-                            <a class="header">Chicago</a>
-
-                            <div class="description">A lovely city</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="ui right floated labels">
-                            <div class="ui blue label">
-                                <i class="icon unhide"></i> 25
-                            </div>
-                            <div class="ui teal label">
-                                <i class="icon comment outline"></i> 23
-                            </div>
-                        </div>
-
-                        <i class="map marker icon"></i>
-
-                        <div class="content">
-                            <a class="header">Los Angeles</a>
-
-                            <div class="description">A lovely city</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ui purple stacked segment">
-                <h2 class="ui purple header">相册</h2>
-
-                <div class="ui four items">
-                    <div class="item">
-                        <div class="content">
-                            <div class="name">爱酷学习网天前Bootstrap视频教程</div>
-                            <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic
-                                UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="name">爱酷学习网Semantic UI视频教程</div>
-                            <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="name">爱酷学习网ExtJS视频教程</div>
-                            <p class="description">
-                                ExtJS是一个重量级的前端框架，非常重量级，如果没有特殊需要，不要使用这个框架。ExtJS可以做到完全的Ajax化，但是类库大，学习曲线高，且就算是压缩后的文件大小也非常大，影响它的使用。</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="name">爱酷学习网天前Bootstrap视频教程</div>
-                            <p class="description">Bootstrap是由Twitter开发的一个前端框架，和Semantic UI类似，不过没有Semantic
-                                UI这么多的控件，和Semantic UI比起来稍微差一些。</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="name">爱酷学习网Semantic UI视频教程</div>
-                            <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <div class="name">爱酷学习网ExtJS视频教程</div>
-                            <p class="description">
-                                ExtJS是一个重量级的前端框架，非常重量级，如果没有特殊需要，不要使用这个框架。ExtJS可以做到完全的Ajax化，但是类库大，学习曲线高，且就算是压缩后的文件大小也非常大，影响它的使用。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{- body }}
         </div>
         <div class="three wide column">
             <div class="ui fluid vertical menu">
@@ -198,7 +95,6 @@
         </div>
     </div>
 </div>
-
 
 </body>
 </html>
