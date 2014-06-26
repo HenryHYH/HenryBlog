@@ -3,9 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Test Css</title>
-    <link type="text/css" rel="stylesheet" href="/SemanticUI/css/semantic.min.css"/>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-    <script type="text/javascript" src="/SemanticUI/javascript/semantic.js"></script>
+    <link type="text/css" rel="stylesheet" href="/lib/SemanticUI/css/semantic.min.css"/>
+    <script type="text/javascript" src="/lib/jQuery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/lib/SemanticUI/javascript/semantic.js"></script>
     <style type="text/css">
         body {
             font-family: Arial, serif;
@@ -14,28 +14,27 @@
 </head>
 <body>
 
-<div class="ui tiered blue menu">
+<div class="ui menu">
     <div class="menu">
-        <a class="active item">
-            <i class="users icon"></i>
-            朋友们
+        <a class="active orange item">
+            <i class="icon home"></i> Enjoy life
         </a>
-        <a class="item">
-            <i class="grid layout icon"></i> 浏览
+        <a class="teal item">
+            <i class="browser icon"></i> 日志
         </a>
-        <a class="item">
-            <i class="mail icon"></i> 消息
+        <a class="purple item">
+            <i class="photo icon"></i> 相册
         </a>
 
         <div class="right menu">
+
             <div class="item">
-                <div class="ui icon input">
-                    <input placeholder="搜索中..." type="text">
-                    <i class="search icon"></i>
-                </div>
+                <div class="ui blue button"><i class="icon sign in"></i> 登录</div>
+                <div class="ui green button"><i class="icon user"></i> 注册</div>
             </div>
+
             <div class="ui simple dropdown item">
-                More <i class="icon dropdown"></i>
+                <i class="icon users"></i> 个人中心 <i class="icon dropdown"></i>
 
                 <div class="menu">
                     <a class="item"><i class="edit icon"></i>编辑个人信息</a>
@@ -50,14 +49,79 @@
 <div class="ui grid">
     <div class="equal height row">
         <div class="thirteen wide column">
-            <div class="ui segment"><b>第一列</b>爱酷学习网：免费提供高清在线观看视频教程。</div>
+            <div class="ui teal stacked segment">
+                <h2 class="ui teal header">日志</h2>
+
+                <div class="ui relaxed divided list">
+                    <div class="item">
+                        <i class="map marker icon"></i>
+
+                        <div class="content">
+                            <a class="header">New York City</a>
+
+                            <div class="description">A lovely city</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="map marker icon"></i>
+
+                        <div class="content">
+                            <a class="header">Chicago</a>
+
+                            <div class="description">A lovely city</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="map marker icon"></i>
+
+                        <div class="content">
+                            <a class="header">Los Angeles</a>
+
+                            <div class="description">A lovely city</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui purple stacked segment">
+                <h2 class="ui purple header">相册</h2>
+
+                <div class="ui relaxed divided list">
+                    <div class="item">
+                        <i class="map marker icon"></i>
+
+                        <div class="content">
+                            <a class="header">New York City</a>
+
+                            <div class="description">A lovely city</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="map marker icon"></i>
+
+                        <div class="content">
+                            <a class="header">Chicago</a>
+
+                            <div class="description">A lovely city</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="map marker icon"></i>
+
+                        <div class="content">
+                            <a class="header">Los Angeles</a>
+
+                            <div class="description">A lovely city</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="three wide column">
             <div class="ui fluid vertical menu">
-                <div class="header item">
+                <a class="header item">
+                    日志
                     <i class="user icon"></i>
-                    Communities
-                </div>
+                </a>
                 <div class="item">
                     College
                     <div class="menu">
@@ -73,10 +137,10 @@
                     Aerobics
                 </a>
 
-                <div class="header item">
+                <a class="header item">
                     <i class="globe icon"></i>
-                    Cities
-                </div>
+                    相册
+                </a>
                 <a class="item">
                     New York
                 </a>
@@ -88,17 +152,6 @@
                 </a>
                 <a class="item">
                     San Francisco
-                </a>
-
-                <div class="header item">
-                    <i class="icon calendar"></i>
-                    Months
-                </div>
-                <a class="item">
-                    August
-                </a>
-                <a class="item">
-                    June
                 </a>
             </div>
         </div>
