@@ -1,15 +1,270 @@
-<div class="flow">
-    {{ for(var i = 1; i <= len; i++ ) { }}
-    <div class="item">
-        <div class="title">Title {{= i }}</div>
-        <div class="content" style="height: 150px;">
-            Item {{= i }}<br>
-        </div>
-        <div class="footer">
-            <a class="text-highlight" href="/blog/{{= i }}">
-                <span class="oi" data-glyph="magnifying-glass" title="详细阅读" aria-hidden="true">&nbsp;详细阅读</span>
-            </a>+
+<!--<div class="flow">-->
+<!--{{ for(var i = 1; i <= len; i++ ) { }}-->
+<!--<div class="item">-->
+<!--<div class="title">Title {{= i }}</div>-->
+<!--<div class="content" style="height: 150px;">-->
+<!--Item {{= i }}<br>-->
+<!--</div>-->
+<!--<div class="footer">-->
+<!--<a class="text-highlight" href="/blog/{{= i }}">-->
+<!--<span class="oi" data-glyph="magnifying-glass" title="详细阅读" aria-hidden="true">&nbsp;详细阅读</span>-->
+<!--</a>+-->
+<!--</div>-->
+<!--</div>-->
+<!--{{ } }}-->
+<!--</div>-->
+
+<h2 class="ui purple header">相册</h2>
+<div class="ui five items">
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Semantic UI视频教程</div>
+        <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+
+        <div class="extra">
+            311 喜欢
         </div>
     </div>
-    {{ } }}
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Redis视频教程</div>
+        <p class="description">Redis是一个内存数据库，并且在此基本上增加了很多数据结构，比如List, Set,
+            ZSet等，让你可以更加快速的整合自己的数据。本视频教程以其为基础进行讲解。</p>
+
+        <div class="extra">
+            522 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网</div>
+        <p class="description">免费在线观看高清视频教程的网站。</p>
+
+        <div class="extra">
+            199 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Semantic UI视频教程</div>
+        <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+
+        <div class="extra">
+            311 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Redis视频教程</div>
+        <p class="description">Redis是一个内存数据库，并且在此基本上增加了很多数据结构，比如List, Set,
+            ZSet等，让你可以更加快速的整合自己的数据。本视频教程以其为基础进行讲解。</p>
+
+        <div class="extra">
+            522 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网</div>
+        <p class="description">免费在线观看高清视频教程的网站。</p>
+
+        <div class="extra">
+            199 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Semantic UI视频教程</div>
+        <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+
+        <div class="extra">
+            311 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Redis视频教程</div>
+        <p class="description">Redis是一个内存数据库，并且在此基本上增加了很多数据结构，比如List, Set,
+            ZSet等，让你可以更加快速的整合自己的数据。本视频教程以其为基础进行讲解。</p>
+
+        <div class="extra">
+            522 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网</div>
+        <p class="description">免费在线观看高清视频教程的网站。</p>
+
+        <div class="extra">
+            199 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Semantic UI视频教程</div>
+        <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+
+        <div class="extra">
+            311 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Redis视频教程</div>
+        <p class="description">Redis是一个内存数据库，并且在此基本上增加了很多数据结构，比如List, Set,
+            ZSet等，让你可以更加快速的整合自己的数据。本视频教程以其为基础进行讲解。</p>
+
+        <div class="extra">
+            522 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网</div>
+        <p class="description">免费在线观看高清视频教程的网站。</p>
+
+        <div class="extra">
+            199 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Semantic UI视频教程</div>
+        <p class="description">以Semantic UI中文网为依托对Semantic UI的各个控件、模块以及元素进行讲解。</p>
+
+        <div class="extra">
+            311 喜欢
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="image">
+        <img class="ui rounded image" src="//www.semantic-ui.com.cn/images/demo/highres.jpg">
+        <a class="like ui corner label">
+            <i class="like icon"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="meta">5天前</div>
+        <div class="name">爱酷学习网Redis视频教程</div>
+        <p class="description">Redis是一个内存数据库，并且在此基本上增加了很多数据结构，比如List, Set,
+            ZSet等，让你可以更加快速的整合自己的数据。本视频教程以其为基础进行讲解。</p>
+
+        <div class="extra">
+            522 喜欢
+        </div>
+    </div>
+</div>
 </div>
