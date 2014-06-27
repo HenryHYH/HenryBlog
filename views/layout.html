@@ -17,14 +17,14 @@
 <body>
 
 <div class="ui menu">
-    <div class="menu">
-        <a class="active orange item">
+    <div class="menu" id="fixed-top-menu">
+        <a class="active orange item" href="/">
             <i class="icon home"></i> Enjoy life
         </a>
-        <a class="teal item">
+        <a class="teal item" href="/blog">
             <i class="browser icon"></i> 日志
         </a>
-        <a class="purple item">
+        <a class="purple item" href="/gallery">
             <i class="photo icon"></i> 相册
         </a>
 
@@ -95,6 +95,13 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#fixed-top-menu > .item').removeClass('active');
+        $('#fixed-top-menu > .item[href="' + window.location.pathname + '"]').addClass('active');
+    });
+</script>
 
 </body>
 </html>
