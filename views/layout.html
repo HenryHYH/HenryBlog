@@ -19,7 +19,7 @@
 <div class="ui menu">
     <div class="menu" id="fixed-top-menu">
         <a class="active orange item" href="/">
-            <i class="icon home"></i> Enjoy life
+            <i class="icon home"></i> <strong>Enjoy life</strong>
         </a>
         <a class="teal item" href="/blog">
             <i class="browser icon"></i> 日志
@@ -31,8 +31,8 @@
         <div class="right menu">
 
             <div class="item">
-                <div class="ui blue button"><i class="icon sign in"></i> 登录</div>
-                <div class="ui green button"><i class="icon user"></i> 注册</div>
+                <div class="ui blue button popup-item" data-content="登录" data-position="bottom center"><i class="icon sign in"></i> 登录</div>
+                <div class="ui green button link popup-item" data-content="注册" data-position="bottom center"><i class="icon user"></i> 注册</div>
             </div>
 
             <div class="ui simple dropdown item">
@@ -55,9 +55,9 @@
         </div>
         <div class="three wide column">
             <div class="ui fluid vertical menu">
-                <a class="header item">
+                <a class="header item" href="/blog">
                     日志
-                    <i class="user icon"></i>
+                    <i class="browser icon"></i>
                 </a>
 
                 <div class="item">
@@ -75,8 +75,8 @@
                     Aerobics
                 </a>
 
-                <a class="header item">
-                    <i class="globe icon"></i>
+                <a class="header item" href="/gallery">
+                    <i class="photo icon"></i>
                     相册
                 </a>
                 <a class="item">
@@ -100,6 +100,11 @@
     $(function () {
         $('#fixed-top-menu > .item').removeClass('active');
         $('#fixed-top-menu > .item[href="' + window.location.pathname + '"]').addClass('active');
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $(".popup-item").popup();
     });
 </script>
 
