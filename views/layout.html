@@ -31,8 +31,12 @@
         <div class="right menu">
 
             <div class="item">
-                <div class="ui blue button popup-item" data-content="登录" data-position="bottom center"><i class="icon sign in"></i> 登录</div>
-                <div class="ui green button link popup-item" data-content="注册" data-position="bottom center"><i class="icon user"></i> 注册</div>
+                <div id="btnLogin" class="ui blue button popup-item" data-content="登录" data-position="bottom center"><i
+                        class="icon sign in"></i> 登录
+                </div>
+                <div id="btnRegister" class="ui green button link popup-item" data-content="注册"
+                     data-position="bottom center"><i class="icon user"></i> 注册
+                </div>
             </div>
 
             <div class="ui simple dropdown item">
@@ -96,6 +100,100 @@
     </div>
 </div>
 
+<div id="modalLogin" class="ui small modal">
+    <i class="close icon"></i>
+
+    <div class="ui blue inverted header">登录</div>
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <label>用户名</label>
+
+                <div class="ui left labeled icon input">
+                    <input placeholder="用户名" type="text"/>
+                    <i class="user icon"></i>
+
+                    <div class="ui red corner label">
+                        <i class="icon asterisk"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>密码</label>
+
+                <div class="ui left labeled icon input">
+                    <input placeholder="密码" type="password"/>
+                    <i class="lock icon"></i>
+
+                    <div class="ui red corner label">
+                        <i class="icon asterisk"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="ui error message">
+                <div class="header">发生了错误</div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui button">取消</div>
+        <div class="ui blue submit button">登录</div>
+    </div>
+</div>
+
+<div id="modalRegister" class="ui small modal">
+    <i class="close icon"></i>
+
+    <div class="ui teal inverted header">注册</div>
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <label>用户名</label>
+
+                <div class="ui left labeled icon input">
+                    <input placeholder="用户名" type="text"/>
+                    <i class="user icon"></i>
+
+                    <div class="ui red corner label">
+                        <i class="icon asterisk"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>密码</label>
+
+                <div class="ui left labeled icon input">
+                    <input placeholder="密码" type="password"/>
+                    <i class="lock icon"></i>
+
+                    <div class="ui red corner label">
+                        <i class="icon asterisk"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Email</label>
+
+                <div class="ui left labeled icon input">
+                    <input placeholder="Email" type="email"/>
+                    <i class="icon mail"></i>
+
+                    <div class="ui red corner label">
+                        <i class="icon asterisk"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="ui error message">
+                <div class="header">发生了错误</div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui button">取消</div>
+        <div class="ui teal submit button">注册</div>
+    </div>
+</div>
+
 <script type="text/javascript">
     $(function () {
         $('#fixed-top-menu > .item').removeClass('active');
@@ -105,6 +203,20 @@
 <script type="text/javascript">
     $(function () {
         $(".popup-item").popup();
+    });
+</script>
+<script type="text/javascript">
+    function ShowLoginModal() {
+        $("#modalLogin").modal('show');
+    }
+
+    function ShowRegisterModal() {
+        $('#modalRegister').modal('show');
+    }
+
+    $(function () {
+        $('#btnLogin').click(ShowLoginModal);
+        $('#btnRegister').click(ShowRegisterModal);
     });
 </script>
 
