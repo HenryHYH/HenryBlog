@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
 
-    <title>{{= typeof(title) === 'undefined' ? '' : title + ' - ' }}Enjoy Life</title>
+    <title>{{ if(locals.title) { }} {{= locals.title }} - {{ } }}Enjoy Life</title>
 
     <link type="text/css" rel="stylesheet" href="/lib/SemanticUI/css/semantic.min.css"/>
     <script type="text/javascript" src="/lib/jQuery/jquery-1.11.1.min.js"></script>

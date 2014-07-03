@@ -30,7 +30,7 @@ router.get('/', function (req, res) {
     var list = MockData();
 
     res.render('blog/index', {
-        title: 'Blog',
+        title: '博客',
         list: list
     });
 });
