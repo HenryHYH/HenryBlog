@@ -18,7 +18,7 @@ var routes = require('./routes/index'),
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.engine('.html', ejs.__express);
+app.engine('html', ejs.__express);
 app.set('view engine', 'html');
 partials.register('.html', ejs);
 

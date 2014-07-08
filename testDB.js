@@ -1,10 +1,16 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/HenryDB');
+mongoose.connect('mongodb://localhost/Blog');
 
-var User = mongoose.model('User', { Name: String }, 'User');
+var Schema = mongoose.Schema;
+var UserSchema = new Schema({
+    Name: String,
+    Age: Number
+});
 
-if (false) {
-    var info = new User({ Name: 'ABC' });
+var User = mongoose.model('User', UserSchema, 'User2');
+
+if (true) {
+    var info = new User({ Name: 'ABC', Age: 100 });
 
     info.save(function (err) {
         if (err)
